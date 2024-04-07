@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Read the dataset
-amphi = pd.read_csv("D:/Coding/HomeZ/homez/home_range/minimum_convex_polygon/tracking_sample.csv")
+amphi = pd.read_csv("D:/Coding/Minor-2/tracking_sample.csv")
 
 # Drop rows with missing coordinates
 amphi.dropna(subset=['x', 'y'], inplace=True)
@@ -60,3 +60,4 @@ plt.ylabel('Y Coordinate')
 plt.title('MCP for Different Percentages of Points')
 plt.legend()
 plt.show()
+
